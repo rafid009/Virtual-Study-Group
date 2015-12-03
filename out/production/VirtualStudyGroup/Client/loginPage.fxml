@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.LoginPageController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000; -fx-opacity: .95;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="246.0" fitWidth="248.0" layoutX="164.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="158.0" layoutY="355.0" text="PASSWORD  :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="317.0" text="USER NAME :" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" alignment="CENTER" layoutX="272.0" layoutY="314.0" promptText="Enter User Name" style="-fx-background-radius: 30;" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="272.0" layoutY="353.0" promptText="Enter Password" style="-fx-border-radius: 30; -fx-background-radius: 30;" />
+      <Button fx:id="login" layoutX="213.0" layoutY="415.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: #636363; -fx-background-radius: 30; -fx-pref-width: 150px; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2px;" styleClass="login" text="SIGN IN" textAlignment="JUSTIFY" textFill="WHITE" />
+      <Button fx:id="register" layoutX="213.0" layoutY="528.0" mnemonicParsing="false" onAction="#registerAction" style="-fx-background-color: #636363; -fx-background-radius: 30; -fx-pref-width: 150px; -fx-text-fill: white; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2px;" text="SIGN UP" />
+      <Text fill="WHITE" layoutX="223.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account??" textAlignment="JUSTIFY" />
+      <Text fill="WHITE" layoutX="254.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click below..." textAlignment="JUSTIFY" />
+   </children>
+</AnchorPane>

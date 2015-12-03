@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #0AA25A;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.FirstPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutY="350.0" stroke="#00000003" strokeType="INSIDE" style="-fx-fill: #bb915d;" width="800.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Blend>
+               <topInput>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </topInput>
+            </Blend>
+         </effect>
+      </Rectangle>
+      <AnchorPane fx:id="whiteMenuAnchor" layoutX="690.0" prefHeight="550.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="transparentMenuAnchor" opacity="0.78" prefHeight="550.0" prefWidth="110.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <effect>
+                  <Shadow />
+               </effect>
+            </AnchorPane>
+            <Button fx:id="btnLogOut" layoutX="18.0" layoutY="212.0" mnemonicParsing="false" onAction="#onLogOutAction" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #F9C923; -fx-background-radius: 30;" text="Log Out" textFill="#b84040">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSettings" layoutX="18.0" layoutY="30.0" mnemonicParsing="false" onAction="#onSettingsAction" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #F9C923; -fx-background-radius: 30;" text="Settings" textFill="#b84040">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAbout" layoutX="18.0" layoutY="121.0" mnemonicParsing="false" onAction="#onAboutAction" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #F9C923; -fx-background-radius: 30;" text="About" textFill="#b84040">
+               <effect>
+                  <Lighting>
+      
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnExit" layoutX="18.0" layoutY="301.0" mnemonicParsing="false" onAction="#onExitAction" prefHeight="45.0" prefWidth="75.0" style="-fx-background-color: #F9C923; -fx-background-radius: 30;" text="Exit" textFill="#b84040">
+               <effect>
+                  <Lighting>
+      
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fill="#aaff2e" fontSmoothingType="LCD" layoutX="52.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSE 201">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font></Text>
+      <Text fill="#aaff2e" fontSmoothingType="LCD" layoutX="182.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSE 203">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font></Text>
+      <Text fill="#aaff2e" fontSmoothingType="LCD" layoutX="316.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CSE 205">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font></Text>
+      <Text fill="#aaff2e" fontSmoothingType="LCD" layoutX="450.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EEE 263">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font></Text>
+      <Text fill="#aaff2e" fontSmoothingType="LCD" layoutX="579.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATH 241">
+         <font>
+            <Font name="Comic Sans MS Italic" size="13.0" />
+         </font></Text>
+      <Rectangle fx:id="CSE201" arcHeight="5.0" arcWidth="5.0" fill="#4b4e51" height="159.0" layoutX="31.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="92.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="CSE203" arcHeight="5.0" arcWidth="5.0" fill="#4b4e51" height="159.0" layoutX="163.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="92.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="CSE205" arcHeight="5.0" arcWidth="5.0" fill="#4b4e51" height="159.0" layoutX="297.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="92.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="EEE263" arcHeight="5.0" arcWidth="5.0" fill="#4b4e51" height="159.0" layoutX="431.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="92.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="MATH241" arcHeight="5.0" arcWidth="5.0" fill="#4b4e51" height="159.0" layoutX="566.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="92.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Rectangle>
+      <Label layoutX="221.0" layoutY="39.0" text="Virtual" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="39.0" text="Study" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="39.0" text="Group" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="181.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
